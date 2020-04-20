@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi" />
+        <link rel='icon' href='{{asset('assets/img/favicon.ico')}}' type='image/x-icon'/ >
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="{{asset('assets/css/style.css')}}" rel="stylesheet">
+       <link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/10.0.2/css/intlTelInput.css" rel="stylesheet">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+        @font-face {
+    font-family: 'AG Old Face Bold';
+    src:url({{asset('assets/webfonts/AGOldFace-Bold.otf')}});
+
+    }
+     @font-face {
+    font-family: 'AG Old Face Regular';
+    src:url({{asset('assets/webfonts/AGOldFace-Regular.otf')}});
+
+
+    }
+    .birth {
+
+    background-position: center;
+    background-size: inherit;
+    background-image:url({{asset('assets/img/bg-form-1.png')}});
+ 
+
+}
+.mobile-section-4 {
+    border: 3px solid #acacac;
+    background-color: #8a5374;
+    margin-top: 15px;
+    
+    background-repeat:no-repeat;
+    background-size:cover;
+    height: 100px;
+    background-position:center;
+    background-image:url({{asset('assets/img/fil-2.png')}});
+    
+    
+}
+
+.birth2 {
+
+    background-position: center;
+    background-size: inherit;
+ background-image:url({{asset('assets/img/bg-form-2.png')}});
+ 
+
+}
+.birth3 {
+
+    background-position: center;
+    background-size: inherit;
+ background-image:url({{asset('assets/img/bg-form-3.png')}});
+ 
+
+}
+.birth4{
+
+ background-position: center;
+    background-size: inherit;
+ background-image:url({{asset('assets/img/bg-form-4.png')}});
+}
+.birth5{
+
+ background-position: center;
+    background-size: inherit;
+ background-image:url({{asset('assets/img/bg-form-5.png')}});
+}
+
+
+.tel-b{
+    background-image:url({{asset('assets/img/tel.png')}});
+}
+
+.label-1 {
+   background-color:#6f273d; 
+   float: left;           
+    background-image: url({{asset('assets/img/femme.png')}});   
+}
+.label-2{
+background-color:#acacac;
+float:right;
+background-image: url({{asset('assets/img/homme.png')}});
+   
+}
+.label-2,.label-1 {
+ display: block;
+    text-indent: -999em;
+    border-radius: 5px;
+    margin: 10px;
+    width: 110px;
+    height: 110px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+}
+.tel-ctn a {
+    color: #789b97;
+    font-weight: 600;
+    /* font-size: 23px; */
+    background-size: contain;
+    padding: 16px 37px;
+    background-repeat: no-repeat;
+    font-family: AG Old Face Bold;
+    text-align: center;
+   background-image: url({{asset('assets/img/tel.png')}});
+}
+
+
+
+
+
+ .fil-sect-2 {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+     background-image: url({{asset('assets/img/fil.png')}});
+}
+
+        </style>
+        {% endblock %}
+    </head>
+    <body>
+    
+    
+        {% block body %}{% endblock %}
+        {% block javascripts %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="{{asset('assets/js/date-dropdown.js')}}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/10.0.2/js/intlTelInput.min.js"></script>
+    <script src="{{asset('assets/js/utils.js')}}"></script>
+    <script>
+
+ var currentTab = 0; // Current tab is set to be the first tab (0)
+showTab(currentTab); // Display the current tab
+
+function showTab(n) {
+  // This function will display the specified tab of the form ...
+  var x = $('.tab');
+  
+  x[n].style.display = "block";
+  
+ 
+  // ... and fix the Previous/Next buttons:
+ 
+  if (n == (x.length - 1)) {
+    document.getElementById("nextBtn").innerHTML = "Valider mon coaching";
+  } else {
+    document.getElementById("nextBtn").innerHTML = "Question Suivante";
+  }
+  // ... and run a function that displays the correct step indicator:
+  fixStepIndicator(n)
+}
+
+function nextPrev(n) {
+  // This function will figure out which tab to display
+  var x = document.getElementsByClassName("tab");
+  // Exit the function if any field in the current tab is invalid:
+  if (n == 1 && !validateForm()) return false;
+  // Hide the current tab:
+  
+   x[currentTab].style.transform="translateY(30px)";
+  x[currentTab].style.display = "none";
+ 
+  
+  // Increase or decrease the current tab by 1:
+  currentTab = currentTab + n;
+  // if you have reached the end of the form... :
+  if (currentTab >= x.length) {
+    //...the form gets submitted:
+    document.getElementById("regForm").submit();
+    return false;
+  }
+  // Otherwise, display the correct tab:
+  showTab(currentTab);
+}
+
+function validateForm() {
+  // This function deals with validation of the form fields
+  var x, y, i, z,valid = true;
+  x = document.getElementsByClassName("tab");
+  y = x[currentTab].getElementsByTagName("input");
+  z= x[currentTab].getElementsByTagName("span");
+ var email=$("input[type ='email']").val();
+var pré=$( "#prénom" ).val();
+var pré_ex=$( "#prénom_ex" ).val();
+  console.log(pré);
+ 
+ var reg = /^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?$/i;
+  // A loop that checks every input field in the current tab:
+  for (i = 0; i < y.length; i++) {
+    
+    // If a field is empty...
+    if (y[i].value == "" || (reg.test(email) == false && email!="") || !/^[a-zA-Z ]*$/g.test(pré) || !/^[a-zA-Z ]*$/g.test(pré_ex) ) {
+      // add an "invalid" class to the field:
+      y[i].className += " invalid";
+     
+      z[0].style.display="block";
+      // and set the current valid status to false:
+      valid = false;
+    }
+  }
+  
+ 
+  // If the valid status is true, mark the step as finished and valid:
+  if (valid) {
+    document.getElementsByClassName("step")[currentTab].className += " finish";
+  }
+  return valid; // return the valid status
+}
+
+function fixStepIndicator(n) {
+  // This function removes the "active" class of all steps...
+  var i, x = document.getElementsByClassName("step");
+  for (i = 0; i < x.length; i++) {
+    x[i].className = x[i].className.replace(" active", "");
+  }
+  //... and adds the "active" class to the current step:
+  x[n].className += " active";
+}
+
+$(document).ready(function() {
+
+$( ".label-1" ).click(function(event) {
+    $(".label-1").css("border", "5px solid #355179");
+    $(".label-2").css("border", "none");
+    $('.radio-1').attr("checked", "checked");
+    $('.radio-2').removeAttr('checked');
+
+  });
+ 
+
+  $( ".label-2" ).click(function(event) {
+    $(".label-2").css("border", "5px solid #355179");
+    $(".label-1").css("border", "none");
+     $('.radio-2').attr("checked", "checked");
+    $('.radio-1').removeAttr('checked');
+     
+    
+  });
+   $( "#nextBtn" ).click(function(event) {
+         $( "#nextBtn" ).css("background-color","#f5efef");
+         $( "#nextBtn" ).css("color"," #8a5374");
+         $( "#nextBtn" ).addClass('nextBtn2');
+       
+          $( "#nextBtn" ).css("text-shadow"," 1px 1px #f7dada");
+          $("#frm").addClass('birth');
+          $(".nextbtn").addClass('nextbtn2');
+
+          var x=$( "#example4" ).val();
+           if(x=='') {  
+              
+           }else{
+             
+                           
+           $( ".nextbtn" ).click(function(event) {         
+             $("#frm").removeClass('birth');
+              $("#frm").addClass('birth2');
+              $(".nextbtn").addClass('nextbtn3');
+              $(".nextbtn").removeClass('nextbtn2');
+          });
+          }
+          var y=$( "#prénom_ex" ).val();
+           if(y=='') {  
+                
+           }else{
+
+             $( ".nextbtn3" ).click(function(event) {         
+             $("#frm").removeClass('birth2');
+              $("#frm").addClass('birth');
+              $(".nextbtn").addClass('nextbtn4');
+              $(".nextbtn").removeClass('nextbtn3');
+          });
+           }
+ var z=$( "#séparation" ).val();
+           if(z=='') {  
+                
+           }else{
+            $( ".nextbtn4" ).click(function(event) {         
+             $("#frm").removeClass('birth');
+              $("#frm").addClass('birth3');
+              $(".nextbtn").addClass('nextbtn5');
+              $(".nextbtn").removeClass('nextbtn3');
+            $(".nextbtn").removeClass('nextbtn4');
+             
+          });
+           }
+           var t=$( "#prénom" ).val();
+           if(t=='') {  
+                
+           }else{
+          $( ".nextbtn5" ).click(function(event) {         
+             $("#frm").removeClass('birth3');
+              $("#frm").addClass('birth4');
+              $(".nextbtn").addClass('nextbtn6');
+               $(".nextbtn").removeClass('nextbtn5');
+               $(".nextbtn").removeClass('nextbtn3');
+             
+          });
+         
+           }
+    
+  });
+  });
+  
+
+  
+  
+</script>
+
+<script>
+var monthNames = [ "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December" ];
+
+for (i = new Date().getFullYear(); i > 1950; i--){
+    $('#years').append($('<option />').val(i).html(i));
+}
+    
+for (i = 1; i < 13; i++){
+    $('#months').append($('<option />').val(i).html(i));
+}
+ updateNumberOfDays(); 
+    
+$('#years, #months').on("change", function(){
+    updateNumberOfDays(); 
+});
+
+
+
+function updateNumberOfDays(){
+    $('#days').html('');
+    month=$('#months').val();
+    year=$('#years').val();
+    days=daysInMonth(month, year);
+
+    for(i=1; i < days+1 ; i++){
+            $('#days').append($('<option />').val(i).html(i));
+    }
+    $('#message').html(monthNames[month-1]+" in the year "+year+" has <b>"+days+"</b> days");
+}
+
+function daysInMonth(month, year) {
+    return new Date(year, month, 0).getDate();
+}
+</script>
+<script>
+$("#example4").dateDropdowns({
+    minAge: 18
+    });
+</script>
+
+<script>
+
+        var input = document.querySelector("#phone");
+        $("#phone").intlTelInput( {
+      initialCountry: "auto",
+      preferredCountries: ["fr", "be", "lu", "ca", "ch"],
+    geoIpLookup: function(callback) {
+    $.get('https://ipinfo.io', function() {}, "jsonp").always(function(resp) {
+        var countryCode = (resp && resp.country) ? resp.country : "";
+      callback(countryCode);
+    });
+  }
+});
+
+  
+  
+</script>
+
+ 
+        {% endblock %}
+    </body>
+</html>

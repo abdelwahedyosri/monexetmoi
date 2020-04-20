@@ -1,0 +1,956 @@
+                    html,
+                    body {
+                        margin: 0;
+                        height: 100%;
+                    }
+                    
+                    .ques4 {
+                        color: #8a5374;
+                        font-family: AG Old Face Regular;
+                        font-size: 12px;
+                        margin-left: 20px;
+                    }
+                    
+                    .row.s-4.desktop {
+                        margin-top: -60px;
+                    }
+                    
+                    .stph_1 {
+                        font-family: AG Old Face Regular!important;
+                        text-transform: uppercase;
+                        font-weight: 100;
+                        font-size: 22px;
+                    }
+                    
+                    .stph_2 {
+                        text-transform: uppercase;
+                        font-family: AG Old Face Regular;
+                        font-weight: 100;
+                        font-size: 28px;
+                    }
+                    
+                    .stph_3 {
+                        font-family: AG Old Face Regular!important;
+                        text-transform: uppercase;
+                        font-weight: 100;
+                        font-size: 24px;
+                    }
+                    
+                    .stph_4 {
+                        text-transform: uppercase;
+                        font-size: 34px;
+                    }
+                    
+                    .stph_5 {
+                        text-transform: uppercase;
+                        font-size: 30px;
+                    }
+                    
+                    #frm {
+                        -webkit-transition: all 1s ease;
+                        -moz-transition: all 1s ease;
+                        -o-transition: all 1s ease;
+                        transition: all 1s ease;
+                    }
+                    
+                    .cdt_1 {
+                        color: #fff;
+                        font-family: AG Old Face Regular;
+                        font-size: 20px;
+                        text-align: right;
+                    }
+                    
+                    .section-4 {
+                        background-color: #8a5374;
+                    }
+                    
+                    #apl-11 {
+                        color: #fff;
+                        text-decoration: none;
+                    }
+                    
+                    .n_vert {
+                        color: #789b97;
+                        font-size: 26px;
+                        font-family: AG Old Face Regular;
+                    }
+                    
+                    #n_vert {
+                        color: #fff;
+                        text-decoration: none;
+                    }
+                    
+                    .nextbtn2,
+                    .nextbtn,
+                    .nextbtn3,
+                    .nextbn4,
+                    .nextbtn5,
+                    .nextbtn6 {
+                        margin: 1% auto;
+                    }
+                    
+                    i.fa.fa-phone {
+                        color: #fff;
+                        font-size: 22px;
+                    }
+                    
+                    .button-appel {
+                        background-color: #789b97;
+                        border: 2px solid #acacac;
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: nowrap;
+                        justify-content: space-around;
+                        align-items: center;
+                        align-content: stretch;
+                        width: 112px;
+                        box-shadow: inset 3px -3px 4px 0px #2a2929, inset 3px 2px 3px 0px #fff;
+                        margin-top: 20px;
+                    }
+                    
+                    .bnt-appl-ctn {
+                        border-right: 2px solid #acacac;
+                        padding: 0px 5px;
+                    }
+                    
+                    .button-appel h3 {
+                        color: #fff;
+                        text-transform: uppercase;
+                        font-family: AG Old Face Bold;
+                        font-size: 14px;
+                        padding-top: 7px;
+                    }
+                    
+                    #frm {
+                        background-color: #ffffff;
+                        box-shadow: 0 0 10px #acacac;
+                        padding-bottom: 5px;
+                    }
+                    
+                    .container-fluid-desktop {
+                        margin-top: 30px;
+                    }
+                    
+                    .container-fluid-mobile {
+                        margin-top: 30px;
+                    }
+                    
+                    .ici_1 {
+                        padding-bottom: 10px;
+                        padding-top: 10px;
+                    }
+                    
+                    img.hov {
+                        position: absolute;
+                        left: 0;
+                        top: 61px;
+                        z-index: -1;
+                    }
+                    
+                    .s-4-1 {
+                        padding-left: 0px;
+                    }
+                    
+                    .desc-ctn {
+                        position: absolute;
+                        top: -23px;
+                        right: -85px;
+                    }
+                    
+                    .col-5 {
+                        margin-top: 30px;
+                        padding-right: 30px;
+                    }
+                    
+                    .logo-ctn img {
+                        display: block;
+                    }
+                    
+                    .tel-ctn {
+                        height: 76px;
+                        margin: 0 auto;
+                        background-color: #789b97;
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: nowrap;
+                        justify-content: space-between;
+                        align-items: center;
+                        align-content: flex-start;
+                        padding: 3px;
+                        width: 326px;
+                    }
+                    
+                    .et {
+                        font-family: AG Old Face Regular;
+                        padding: 0 10px;
+                        font-size: 16px;
+                    }
+                    
+                    .f {
+                        font-size: 16px;
+                        font-family: AG Old Face Regular;
+                        font-size: 14px;
+                    }
+                    
+                    .h {
+                        font-size: 16px;
+                        font-family: AG Old Face Regular;
+                        font-size: 14px;
+                    }
+                    
+                    .desc-1 {
+                        color: #fff;
+                        font-size: 14px;
+                        line-height: 1;
+                        text-align: center;
+                        font-family: AG Old Face Regular;
+                    }
+                    
+                    .hf {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: nowrap;
+                        justify-content: space-between;
+                        padding: 0 40px;
+                        margin-top: 133px;
+                    }
+                    
+                    .ts h2 {
+                        text-transform: uppercase;
+                        color: #6f273d;
+                        text-align: center;
+                        font-weight: 700;
+                        line-height: 1.8rem;
+                        margin-bottom: 10px;
+                        margin-top: 20px;
+                        font-size: 24px;
+                        font-family: AG Old Face Bold;
+                    }
+                    /* Style the form */
+                    
+                    nav {
+                        background-color: #fc4747;
+                    }
+                    
+                    .navbar {
+                        padding: 1rem
+                    }
+                    
+                    .navbar-toggler {
+                        float: right;
+                    }
+                    /* Navbar Collapse Styles To Stack Items At Mobile Widths*/
+                    
+                    @media(max-width:61.9em) {
+                        .navbar .navbar-brand {
+                            float: none;
+                            display: inline-block;
+                        }
+                        .navbar .navbar-nav>.nav-item {
+                            float: none;
+                            margin-left: .1rem;
+                        }
+                        .navbar .navbar-nav {
+                            float: none !important;
+                        }
+                        .nav-item {
+                            width: 100%;
+                            text-align: left;
+                        }
+                    }
+                    
+                    #regForm input {
+                        font-size: 17px;
+                    }
+                    
+                    #regForm input[type="tel"] {
+                        width: 100%;
+                        font-size: 17px;
+                        border: 1px solid #aaaaaa;
+                    }
+                    /* Mark input boxes that gets an error on validation: */
+                    
+                    #regForm input.invalid {
+                        background-color: #ffdddd;
+                        border-color: red;
+                    }
+                    
+                    .tab {
+                        display: none;
+                        margin-top: 30px;
+                        margin-bottom: 10px;
+                    }
+                    
+                    .tab1 {
+                        padding: 0 30px;
+                        display: block;
+                    }
+                    /* Mark the active step: */
+                    
+                    .step.active {
+                        opacity: 1;
+                    }
+                    /* Mark the steps that are finished and valid: */
+                    
+                    .step.finish {
+                        background-color: #4CAF50;
+                    }
+                    
+                    #regForm h3 {
+                        text-transform: uppercase;
+                        font-size: 20px;
+                        text-align: center;
+                        font-weight: 500;
+                        font-family: AG Old Face Regular;
+                        line-height: 1.4;
+                        padding-top: 10px;
+                    }
+                    
+                    #regForm h3 span {
+                        color: #6584ba;
+                    }
+                    
+                    #regForm input[type="radio"]:checked+label {
+                        border: 5px solid #355179;
+                    }
+                    
+                    #nextBtn {
+                        padding: 4px 10px;
+                        border-radius: 15px;
+                        background-color: #8a5374;
+                        color: #fff;
+                        margin: auto;
+                        display: block;
+                        border: none;
+                        font-family: AG Old Face Regular;
+                        font-size: 14px;
+                    }
+                    
+                    #prevBtn {
+                        display: none;
+                    }
+                    
+                    #regForm input[type="radio"] {
+                        display: none;
+                    }
+                    
+                    #regForm input[type="email"],
+                    #prénom_ex,
+                    #séparation,
+                    #prénom {
+                        display: block;
+                        background-color: #f5efef;
+                        border: 2px solid #fff;
+                        margin: 22px auto;
+                        height: 80px;
+                        width: 70%;
+                    }
+                    
+                    .desc-ctn-span-1 {
+                        font-family: AG Old Face Bold;
+                        font-size: 24px;
+                    }
+                    
+                    .desc-ctn-span-2 {
+                        font-size: 20px;
+                        text-transform: uppercase;
+                        font-weight: 100;
+                    }
+                    
+                    .desc-ctn-span-3 {
+                        font-size: 27px;
+                        text-transform: uppercase;
+                        font-weight: 400;
+                    }
+                    
+                    .desc-ctn-span-4 {
+                        font-family: AG Old Face Bold;
+                        font-size: 30px;
+                    }
+                    
+                    .desc-ctn-span-5 {
+                        font-family: AG Old Face Bold;
+                        font-size: 22px;
+                    }
+                    
+                    span.desc-ctn-span-6 {
+                        font-weight: 200;
+                    }
+                    
+                    .desc-ctn h3 {
+                        margin-top: 90px;
+                        color: #fff;
+                        text-align: center;
+                        line-height: 1.3;
+                    }
+                    
+                    .desc h3 {
+                        text-transform: uppercase;
+                        text-align: center;
+                        line-height: 15;
+                        font-size: 48px;
+                        font-family: AG Old Face Bold;
+                    }
+                    
+                    .desc span:first-child {
+                        text-transform: none;
+                    }
+                    
+                    .desc span {
+                        font-weight: 900;
+                    }
+                    
+                    .cd {
+                        background-color: #8a5374;
+                        margin-top: -47px;
+                        padding: 20px 50px;
+                    }
+                    
+                    .cd h4 {
+                        font-size: 1rem;
+                        color: #fff;
+                    }
+                    
+                    .nextbtn2 {
+                        border: 4px solid #fff;
+                        display: block;
+                        margin: 0% auto;
+                        width: 155px;
+                        border-radius: 10px;
+                        padding: 1px;
+                        font-weight: 600;
+                        font-size: 15px;
+                        background-color: #f5efef;
+                    }
+                    
+                    .ques {
+                        color: #8a5374;
+                        font-family: AG Old Face Regular;
+                        font-size: 16px;
+                        margin-left: 20px;
+                    }
+                    
+                    .ques3 {
+                        color: #6f1549;
+                        font-family: AG Old Face Regular;
+                        font-size: 16px;
+                        margin-left: 20px;
+                    }
+                    
+                    .ques1 {
+                        color: #6f273d;
+                        font-weight: 500;
+                        font-size: 16px;
+                        margin-left: 20px;
+                    }
+                    
+                    .ques5 {
+                        color: #6f273d;
+                        font-weight: 500;
+                        font-size: 12px;
+                        margin-left: 20px;
+                    }
+                    
+                    .intl-tel-input {
+                        position: relative;
+                        display: block;
+                        margin: 20px 30px 20px;
+                        width: 80%;
+                    }
+                    
+                    .example {
+                        box-sizing: border-box;
+                        text-align: center;
+                    }
+                    
+                    textarea {
+                        margin: 0 auto;
+                        display: block;
+                        background-color: #f5efef;
+                        border: 2px solid #fff;
+                        margin: 24px auto;
+                    }
+                    
+                    .foot {
+                        text-align: right;
+                    }
+                    
+                    p {
+                        margin-top: 0;
+                        margin-bottom: 0rem;
+                    }
+                    
+                    .example input {
+                        display: block;
+                        margin: 0 auto 20px auto;
+                        width: 150px;
+                        padding: 8px 10px;
+                        border: 1px solid #CCCCCC;
+                        border-radius: 3px;
+                        background: #F2F2F2;
+                        text-align: center;
+                        font-size: 1em;
+                        letter-spacing: 0.02em;
+                    }
+                    
+                    .example select {
+                        padding: 10px;
+                        background: #ffffff;
+                        border: 1px solid #CCCCCC;
+                        border-radius: 3px;
+                        margin: 0 3px;
+                    }
+                    
+                    .date-dropdowns {
+                        margin-top: 40px;
+                    }
+                    
+                    .example input {
+                        display: none;
+                    }
+                    
+                    textarea {
+                        border-radius: 10px;
+                    }
+                    
+                    .age {
+                        color: red;
+                        font-size: 12px;
+                        margin: 0 auto 45px;
+                        text-align: center;
+                    }
+                    
+                    .validate {
+                        color: red;
+                        font-size: 12px;
+                        margin: 0 auto;
+                        text-align: center;
+                        display: none;
+                    }
+                    
+                    .cond {
+                        font-size: 10px;
+                        font-family: AG Old Face Regular;
+                        margin-left: 5px;
+                    }
+                    
+                    .condi {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        align-items: center;
+                        align-content: flex-end;
+                        margin-left: 20px;
+                    }
+                    
+                    input#scales {
+                        width: 20px;
+                        height: 20px;
+                        cursor: pointer;
+                        margin-top: -35px;
+                    }
+                    
+                    supp {
+                        vertical-align: super;
+                        text-transform: none;
+                    }
+                    
+                    .section-3 {
+                        background-color: #8a5374;
+                        padding-top: 20px;
+                    }
+                    
+                    .slt {
+                        padding-left: 80px;
+                    }
+                    
+                    .cta {
+                        font-family: AG Old Face Regular;
+                        font-size: 17px;
+                        color: #789b97;
+                        text-align: right;
+                        width: 90%;
+                        padding-right: 30px;
+                    }
+                    
+                    .cdt {
+                        font-size: 22px;
+                        color: #fff;
+                        font-family: AG Old Face Regular;
+                        text-align: right;
+                        padding-top: 20px;
+                    }
+                    
+                    .section-2 {
+                        background-color: #8a5374;
+                        height: 160px;
+                        margin-top: -413px;
+                    }
+                    
+                    h2.sol-tit {
+                        font-size: 32px;
+                        text-transform: uppercase;
+                        font-family: AG Old Face Bold;
+                    }
+                    
+                    .sol span {
+                        color: #fff;
+                    }
+                    
+                    h3.sol {
+                        font-size: 16px;
+                        font-family: AG Old Face Bold;
+                        line-height: 1.4;
+                        text-transform: uppercase;
+                        margin-left: 30px;
+                    }
+                    
+                    @media screen and (min-width: 1000px) and (max-width: 1199px) {
+                        #frm {
+                            position: fixed;
+                            top: 270px;
+                            right: 10%;
+                            width: 340px;
+                        }
+                        .cta {
+                            padding-right: 45px;
+                        }
+                        .hov {
+                            display: none;
+                        }
+                    }
+                    
+                    @media screen and (min-width: 1200px) {
+                        #frm {
+                            position: fixed;
+                            top: 266px;
+                            right: 8%;
+                            width: 340px;
+                        }
+                        p.stph {
+                            position: absolute;
+                            top: 67px;
+                            left: 477px;
+                            font-size: 28px;
+                            font-family: AG Old Face Bold;
+                            color: #fff;
+                            text-align: center;
+                        }
+                        .cta {
+                            font-family: AG Old Face Regular;
+                            font-size: 17px;
+                            color: #789b97;
+                            text-align: right;
+                            width: 90%;
+                            padding-right: 10%;
+                        }
+                    }
+                    
+                    @media screen and (min-width: 1100px) and (max-width: 1199px) {
+                        .couple_img_1 {
+                            display: none!important;
+                        }
+                        .couple_img_2 {
+                            display: block!important;
+                        }
+                        .hov {
+                            display: none;
+                        }
+                        p.stph {
+                            position: absolute;
+                            top: 67px;
+                            left: 320px;
+                            font-size: 26px;
+                            font-family: AG Old Face Bold;
+                            color: #fff;
+                            text-align: center;
+                            line-height: 1.4;
+                        }
+                        .stph_1 {
+                            font-size: 21px;
+                        }
+                        .stph_2 {
+                            font-size: 27px;
+                        }
+                        .stph_3 {
+                            font-size: 23px;
+                        }
+                        .stph_4 {
+                            font-size: 33px;
+                        }
+                        .stph_5 {
+                            font-size: 29px;
+                        }
+                        .hov_2 {
+                            position: absolute;
+                            left: 0;
+                            top: 59px;
+                            z-index: -1;
+                            display: block!important;
+                        }
+                        .couple_img_1 {
+                            display: none!important;
+                        }
+                        .couple_img_2 {
+                            display: block!important;
+                        }
+                    }
+                    
+                    @media screen and (min-width: 1000px) and (max-width: 1099px) {
+                        .couple_img_1,
+                        .couple_img_2 {
+                            display: none!important;
+                        }
+                        .couple_img_3 {
+                            display: block!important;
+                        }
+                        p.stph {
+                            position: absolute;
+                            top: 67px;
+                            left: 261px;
+                            font-size: 24px;
+                            font-family: AG Old Face Bold;
+                            color: #fff;
+                            text-align: center;
+                            line-height: 1.5;
+                        }
+                        .stph_1 {
+                            font-size: 20px;
+                        }
+                        .stph_2 {
+                            font-size: 26px;
+                        }
+                        .stph_3 {
+                            font-size: 22px;
+                        }
+                        .stph_4 {
+                            font-size: 32px;
+                        }
+                        .stph_5 {
+                            font-size: 28px;
+                        }
+                        .hov_3 {
+                            position: absolute;
+                            left: 0;
+                            top: 59px;
+                            z-index: -1;
+                            display: block!important;
+                        }
+                        .hov,
+                        .hov_2 {
+                            display: none;
+                        }
+                    }
+                    
+                    @media screen and (min-width: 850px) and (max-width: 999px) {
+                        .hov,
+                        .hov_2,
+                        .hov_3 {
+                            display: none;
+                        }
+                        .hov_4 {
+                            position: absolute;
+                            left: 0;
+                            top: 59px;
+                            z-index: -1;
+                            display: block!important;
+                        }
+                        .couple_img_1,
+                        .couple_img_2,
+                        .couple_img_3 {
+                            display: none!important;
+                        }
+                        .couple_img_4 {
+                            display: block!important;
+                        }
+                        p.stph {
+                            position: absolute;
+                            top: 67px;
+                            left: 228px;
+                            font-size: 21px;
+                            font-family: AG Old Face Bold;
+                            color: #fff;
+                            text-align: center;
+                            line-height: 1.5;
+                        }
+                        .stph_1 {
+                            font-size: 18px;
+                        }
+                        .stph_2 {
+                            font-size: 24px;
+                        }
+                        .stph_3 {
+                            font-size: 20px;
+                        }
+                        .stph_4 {
+                            font-size: 30px;
+                        }
+                        .stph_5 {
+                            font-size: 26px;
+                        }
+                    }
+                    
+                    @media screen and (min-width: 850px) and (max-width: 1099px) {
+                        .desc-ctn {
+                            position: absolute;
+                            top: -23px;
+                            right: -57px;
+                        }
+                        #frm {
+                            position: fixed;
+                            top: 260px;
+                            right: 8%;
+                            width: 340px;
+                        }
+                        .s-3 {
+                            padding: 0;
+                        }
+                        #regForm input[type="email"],
+                        #prénom_ex,
+                        #séparation,
+                        #prénom {
+                            width: 80%;
+                        }
+                        .desc-ctn h3 {
+                            font-size: 22px;
+                        }
+                        .s-3 {
+                            padding: 0;
+                        }
+                    }
+                    
+                    @media screen and (min-width: 771px) and (max-width: 992px) {
+                        .col-5 {
+                            padding-right: 10px;
+                        }
+                    }
+                    
+                    @media screen and (min-width: 850px) {
+                        .mobile {
+                            display: none;
+                        }
+                    }
+                    
+                    @media screen and (max-width: 850px) {
+                        .desktop {
+                            display: none;
+                        }
+                        #frm {
+                            margin: 20px auto;
+                            width: 340px;
+                        }
+                        .mobile-section-2 {
+                            border-top: 2px solid #acacac;
+                            border-bottom: 2px solid #acacac;
+                            background-color: #8a5374;
+                        }
+                        .row.mobile-section-1 {
+                            padding-bottom: 40px;
+                        }
+                        h3.span-logo {
+                            font-size: 16px;
+                            color: #6f273d;
+                            position: absolute;
+                            top: 100%;
+                            left: 20%;
+                            font-family: AG Old Face Regular;
+                        }
+                        .header-title,
+                        .header-sub-title {
+                            color: #fff;
+                            text-transform: uppercase;
+                            font-size: 18px;
+                            font-weight: 400;
+                        }
+                        .header-sub-title span {
+                            font-family: AG Old Face Bold;
+                            font-size: 23px;
+                            color: #fff;
+                            text-transform: uppercase;
+                        }
+                        .header-sub-title {
+                            margin-left: 30px;
+                        }
+                        .head-t-1 {
+                            padding-top: 35px;
+                            padding-left: 10px;
+                        }
+                        .coaching {
+                            color: #2e344c;
+                            font-size: 30px;
+                            font-family: AG Old Face Bold;
+                            text-transform: uppercase;
+                            text-align: center;
+                            margin-top: 10px;
+                        }
+                        .coaching span {
+                            color: #6584ba;
+                        }
+                        .couple-mobile {
+                            width: 100%;
+                        }
+                        .mobile-section-6 {
+                            background-color: #8a5374;
+                            color: #fff;
+                            font-size: 15px;
+                            font-family: AG Old Face Regular;
+                            border-top: 3px solid #acac;
+                            text-align: center;
+                            line-height: 1.5;
+                            padding-top: 20px;
+                        }
+                        .mobile-section-7 {
+                            background-color: #fff;
+                            height: 600px;
+                        }
+                    }
+                    
+                    .form-signin {
+                        width: 100%;
+                        max-width: 330px;
+                        padding: 15px;
+                        margin: auto;
+                    }
+                    /*custom*/
+                    
+                    .form-signin h1 {
+                        color: #e18096;
+                    }
+                    /*custom*/
+                    
+                    .form-signin label {
+                        color: #e18096;
+                    }
+                    
+                    .form-signin .checkbox {
+                        font-weight: 400;
+                    }
+                    
+                    .form-signin .form-control {
+                        position: relative;
+                        box-sizing: border-box;
+                        height: auto;
+                        padding: 10px;
+                        font-size: 16px;
+                    }
+                    
+                    .form-signin .form-control:focus {
+                        z-index: 2;
+                    }
+                    
+                    .form-signin input[type="email"] {
+                        margin-bottom: -1px;
+                        border-bottom-right-radius: 0;
+                        border-bottom-left-radius: 0;
+                        border-color: #65be74;
+                        /*custom*/
+                    }
+                    
+                    .form-signin input[type="password"] {
+                        margin-bottom: 10px;
+                        border-top-left-radius: 0;
+                        border-top-right-radius: 0;
+                        border-color: #65be74;
+                        /*custom*/
+                    }
